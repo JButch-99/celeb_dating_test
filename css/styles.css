@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid-body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.body-1 {
+  grid-area: 2/2/6/5;
+  background-color: grey;
+  border: solid darkcyan 3px;
+}
+
+h1.greeting {
+  text-align: center;
+  padding: 2% 2%;
+  margin: 2% 25%;
+  background-color: white;
+  border: solid black 4px;
+  border-radius: 30px;
+}
+
+.box {
+  background-color: white;
+  text-align: center;
+  margin: 0% 10%;
+  padding: 10%;
+  border: ridge black 15px;
+}
+
+.body-2 {
+  grid-area: 1/2/2/5;
+  text-align: center;
+  background-color: goldenrod;
+  border: solid gold 3px;
+  border-radius: 10px;
+}
+
+h1.heading {
+  border: solid black 3px;
+  font-weight: 900;
+  padding: 3% 3%;
+  border-radius: 30%;
+  border: solid black 10px;
+  background-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: gold;
+}
+
+.name-tag {
+  background-color: grey;
+  margin: 3% 25%;
+  padding: 1% 1%;
+  font-size: 150%;
+  border: solid black 10px;
+  border-radius: 25%;
+}
+
+.body-3 {
+  grid-area: 1/1/6/2;
+  background-color: grey;
+  border: solid white 3px;
+}
+
+.setting {
+  background-color: darkgrey;
+  text-align: left;
+  padding: 4% 4%;
+  font-size: 175%;
+  border: solid black 2px;
+}
+
+.body-4 {
+  grid-area: 1/5/6/6;
+  background-color: grey;
+  border: solid white 3px;
+}
+
+.quiz-body {
+  border: solid black 3px;
+  background-color: goldenrod;
+  margin: 0% 10%;
+}
+
+h1.quiz-body {
+  background-color: gold;
+  color: black;
+  font-size: 150%;
+  text-align: center;
+}
+
+.question-form {
+  background-color: white;
+}
