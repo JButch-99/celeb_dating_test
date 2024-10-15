@@ -1,22 +1,27 @@
 window.onload = function() {
   const button1 = document.getElementById("button-1");
-  let quiz = document.getElementById("quiz");
+  let quiz_q1 = document.getElementById("quiz-q1");
+  let rules = document.getElementById("rules");
+  let joke = document.getElementById("rickRoll");
 
 
   
   button1.onclick = function() {
-    quiz.setAttribute("class", "hidden");
-    quiz.removeAttribute("class");
-    quiz.setAttribute("class", "quiz-body");
+    quiz_q1.setAttribute("class", "hidden");
+    quiz_q1.removeAttribute("class");
+    quiz_q1.setAttribute("class", "quiz-body");
+    rules.setAttribute("class", "hidden");
+    rules.removeAttribute("class");
+    rules.setAttribute("class", "box");
   }
 
-  button1.onmouseover = function() {
-    button1.style.backgroundColor = "red";
-    button1.style.color = "white";
+  joke.onclick = function() {
+    location.reload();
   }
 
-  button1.onmouseleave = function() {
-    button1.style.backgroundColor = "white";
-    button1.style.color = "black";
-  } 
+  button-Q2 = document.getElementById("button-q2");
+
+  button-Q2.onclick = function() {
+    
+  }
 }

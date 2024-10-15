@@ -16,16 +16,26 @@
               <p>
                 Welcome to the fun celebrity dating quiz! This is a fun quiz that will pair you with 1 of 6 characters, depending on the results you place. There are no checkpoints. When you are ready, please click the button below. Good luck, and have fun!
               </p>
-              <button id="button-1">Click Me!</button>
+              <button id="button-1">Start Test</button>
+            </div>
+            <div id="rules" class="hidden">
+              <h1>Rules</h1>
+              <p>
+                Please take your time. There is no rush, and this is just made for fun. Your total score will determine your answer at the end of this short quiz. Just sit back, relax, and enjoy this quiz made for your entertainment.
+              </p>
+              <button id="rickRoll">Click Here for more fun!</button>
             </div>
           </div>
           <div class="col-md-6">
-            <div id="quiz" class="hidden">
+            <div id="quiz-q1" class="hidden">
               <h1 class="quiz-body">Test</h1>
               <div class="question-form">
+                <h5>Do you like physical work?</h5>
                 <form>
-                  
+                  <label for="scoreQ1">Please enter a number between 1 and 5</label>
+                  <input id="scoreQ1" type="number" max="5" min="1">
                 </form>
+                <button id="button-q2">Next Question</button>
               </div>
             </div>
           </div>

@@ -18,6 +18,24 @@ body {
   border: solid darkcyan 3px;
 }
 
+.quiz-body {
+  border: solid black 3px;
+  background-color: goldenrod;
+  margin: 0% 10%;
+}
+
+h1.quiz-body {
+  background-color: gold;
+  color: black;
+  font-size: 150%;
+  text-align: center;
+}
+
+.question-form {
+  background-color: white;
+  padding: 3% 3%;
+}
+
 h1.greeting {
   text-align: center;
   padding: 2% 2%;
@@ -84,19 +102,7 @@ h1.heading {
   border: solid white 3px;
 }
 
-.quiz-body {
-  border: solid black 3px;
-  background-color: goldenrod;
-  margin: 0% 10%;
-}
-
-h1.quiz-body {
-  background-color: gold;
-  color: black;
-  font-size: 150%;
-  text-align: center;
-}
-
-.question-form {
-  background-color: white;
+button:hover {
+  background-color: grey;
+  color: white;
 }
