@@ -4,6 +4,7 @@ window.onload = function() {
   const button3 = document.getElementById("button-3");
   const button4 = document.getElementById("button-4");
   const button5 = document.getElementById("button-5");
+  const result = document.getElementById("result");
 
   button1.onclick = function() {
     let quiz_q1 = document.getElementById("quiz-q1");
@@ -45,14 +46,35 @@ window.onload = function() {
   }
 
   button5.onclick = function() {
-    const result = document.getElementById("result");
     let quiz_q5 = document.getElementById("quiz-q5");
     quiz_q5.setAttribute("class", "hidden");
     quiz_q5.removeAttribute("class");
     quiz_q5.setAttribute("class", "quiz-body");
+  }
 
-    result.onclick = function() {
-      alert("Ancient Power awaits you on Europa...");
+  result.onclick = function() {
+    let scoreQ1 = document.getElementById("scoreQ1");
+    let scoreQ2 = document.getElementById("scoreQ2");
+    let scoreQ3 = document.getElementById("scoreQ3");
+    let scoreQ4 = document.getElementById("scoreQ4");
+    let scoreQ5 = document.getElementById("scoreQ5");
+
+    const option1 = document.getElementById("option1");
+
+    let num1 = parseInt(scoreQ1.value);
+    let num2 = parseInt(scoreQ2.value);
+    let num3 = parseInt(scoreQ3.value);
+    let num4 = parseInt(scoreQ4.value);
+    let num5 = parseInt(scoreQ5.value);
+
+
+
+    const sum = num1 + num2 + num3 + num4 + num5;
+
+    if (sum > 10) {
+      option1.setAttribute("class", "hidden");
+      option1.removeAttribute("class");
+      option1.setAttribute("class", "quiz-body");
     }
   }
 }
