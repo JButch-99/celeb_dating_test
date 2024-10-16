@@ -30,16 +30,6 @@ window.onload = function() {
   }
 
   button3.onclick = function() {
-    let scoreQ1 = document.getElementById("scoreQ1");
-    let scoreQ2 = document.getElementById("scoreQ2");
-    let num1 = parseInt(scoreQ1.value);
-    let num2 = parseInt(scoreQ2.value);
-    const sum = num1 + num2;
-
-    if (sum >= 1 && sum <= 5) {
-      alert("it works");
-    } else if (sum >= 6 && sum <= 10) {
-      alert("it don't work");
-    }
+    
   }
 }
