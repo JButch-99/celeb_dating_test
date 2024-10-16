@@ -1,10 +1,10 @@
 window.onload = function() {
   const button1 = document.getElementById("button-1");
   const button2 = document.getElementById("button-2");
-  const button3 = document.getElementById("button-3")
+  const button3 = document.getElementById("button-3");
+  const button4 = document.getElementById("button-4");
+  const button5 = document.getElementById("button-5");
 
-
-  
   button1.onclick = function() {
     let quiz_q1 = document.getElementById("quiz-q1");
     let rules = document.getElementById("rules");
@@ -34,5 +34,25 @@ window.onload = function() {
     quiz_q3.setAttribute("class", "hidden");
     quiz_q3.removeAttribute("class");
     quiz_q3.setAttribute("class", "quiz-body");
+  }
+
+  button4.onclick = function() {
+    let quiz_q4 = document.getElementById("quiz-q4");
+    quiz_q4.setAttribute("class", "hidden");
+    quiz_q4.removeAttribute("class");
+    quiz_q4.setAttribute("class", "quiz-body");
+    alert("I see you :)");
+  }
+
+  button5.onclick = function() {
+    const result = document.getElementById("result");
+    let quiz_q5 = document.getElementById("quiz-q5");
+    quiz_q5.setAttribute("class", "hidden");
+    quiz_q5.removeAttribute("class");
+    quiz_q5.setAttribute("class", "quiz-body");
+
+    result.onclick = function() {
+      alert("Ancient Power awaits you on Europa...");
+    }
   }
 }
