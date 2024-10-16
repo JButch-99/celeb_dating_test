@@ -30,6 +30,9 @@ window.onload = function() {
   }
 
   button3.onclick = function() {
-    
+    let quiz_q3 = document.getElementById("quiz-q3");
+    quiz_q3.setAttribute("class", "hidden");
+    quiz_q3.removeAttribute("class");
+    quiz_q3.setAttribute("class", "quiz-body");
   }
 }

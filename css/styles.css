@@ -13,15 +13,15 @@ body {
 }
 
 .body-1 {
-  grid-area: 2/2/6/5;
+  grid-area: 2/1/5/4;
   background-color: grey;
-  border: solid darkcyan 3px;
+  border: solid black 3px;
 }
 
 .quiz-body {
   border: solid black 3px;
   background-color: goldenrod;
-  margin: 0% 10%;
+  margin: 4% 1%;
 }
 
 h1.quiz-body {
@@ -33,7 +33,7 @@ h1.quiz-body {
 
 .question-form {
   background-color: white;
-  padding: 3% 3%;
+  padding: 10% 10%;
 }
 
 h1.greeting {
@@ -51,10 +51,12 @@ h1.greeting {
   margin: 0% 10%;
   padding: 10%;
   border: ridge black 15px;
+  font-size: 150%;
+  font-weight: 750;
 }
 
 .body-2 {
-  grid-area: 1/2/2/5;
+  grid-area: 1/1/2/6;
   text-align: center;
   background-color: goldenrod;
   border: solid gold 3px;
@@ -83,9 +85,9 @@ h1.heading {
 }
 
 .body-3 {
-  grid-area: 1/1/6/2;
+  grid-area: 2/4/5/5;
   background-color: grey;
-  border: solid white 3px;
+  border: solid black 3px;
 }
 
 .setting {
@@ -97,9 +99,15 @@ h1.heading {
 }
 
 .body-4 {
-  grid-area: 1/5/6/6;
+  grid-area: 2/5/5/6;
   background-color: grey;
-  border: solid white 3px;
+  border: solid black 3px;
+}
+
+.body-5 {
+  grid-area: 5/1/6/6;
+  background-color: grey;
+  border: solid black 3px;
 }
 
 button:hover {
