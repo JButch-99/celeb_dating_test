@@ -60,6 +60,10 @@ window.onload = function() {
     let scoreQ5 = document.getElementById("scoreQ5");
 
     const option1 = document.getElementById("option1");
+    const option2 = document.getElementById("option2");
+    const option3 = document.getElementById("option3");
+    const option4 = document.getElementById("option4");
+    const option5 = document.getElementById("option5");
 
     let num1 = parseInt(scoreQ1.value);
     let num2 = parseInt(scoreQ2.value);
@@ -67,14 +71,28 @@ window.onload = function() {
     let num4 = parseInt(scoreQ4.value);
     let num5 = parseInt(scoreQ5.value);
 
-
-
     const sum = num1 + num2 + num3 + num4 + num5;
 
-    if (sum > 10) {
+    if (sum >= 1 && 5 >= sum) {
       option1.setAttribute("class", "hidden");
       option1.removeAttribute("class");
-      option1.setAttribute("class", "quiz-body");
+      option1.setAttribute("class", "box");
+    } else if (sum >= 6 && 10 >= sum) { 
+      option2.setAttribute("class", "hidden");
+      option2.removeAttribute("class");
+      option2.setAttribute("class", "box");
+    } else if (sum >= 11 && 15 >= sum) {
+      option3.setAttribute("class", "hidden");
+      option3.removeAttribute("class");
+      option3.setAttribute("class", "box");
+    } else if (sum >= 16 && 20 >= sum) {
+      option4.setAttribute("class", "hidden");
+      option4.removeAttribute("class");
+      option4.setAttribute("class", "box");
+    } else if (sum >= 21 && 25 >= sum && 25 === sum) {
+      option5.setAttribute("class", "hidden");
+      option5.removeAttribute("class");
+      option5.setAttribute("class", "box");
     }
   }
 }
