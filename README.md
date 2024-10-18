@@ -22,7 +22,7 @@ _This is a webpage meant to help explore branching with JavaScript. Once you cli
 
 * _To start installation, make your way to the GitHub page of this application._
 
-* _Clone this repository onto your desktop.
+* _Clone this repository onto your desktop._
 
 * _Using the terminal, navigate your way to the celeb_test file OR in it's folder, clicking index.html._
 
@@ -30,7 +30,7 @@ _This is a webpage meant to help explore branching with JavaScript. Once you cli
 
 ## Known Bugs
 
-* _ Despite range limit, one can bypass value limits by manually typing a number exceeding 5._
+* _Despite range limit, one can bypass value limits by manually typing a number exceeding 5._
 
 * _Without resets, users may find results overlapping. Will be fixed at a later date._
 
