@@ -5,6 +5,7 @@ window.onload = function() {
   const button4 = document.getElementById("button-4");
   const button5 = document.getElementById("button-5");
   const result = document.getElementById("result");
+  
 
   button1.onclick = function() {
     let quiz_q1 = document.getElementById("quiz-q1");
@@ -42,7 +43,6 @@ window.onload = function() {
     quiz_q4.setAttribute("class", "hidden");
     quiz_q4.removeAttribute("class");
     quiz_q4.setAttribute("class", "quiz-body");
-    alert("I see you :)");
   }
 
   button5.onclick = function() {
@@ -77,22 +77,25 @@ window.onload = function() {
       option1.setAttribute("class", "hidden");
       option1.removeAttribute("class");
       option1.setAttribute("class", "box");
-    } else if (sum >= 6 && 10 >= sum) { 
+    } else if (sum >= 5 && 10 >= sum) { 
       option2.setAttribute("class", "hidden");
       option2.removeAttribute("class");
       option2.setAttribute("class", "box");
-    } else if (sum >= 11 && 15 >= sum) {
+    } else if (sum >= 10 && 15 >= sum) {
       option3.setAttribute("class", "hidden");
       option3.removeAttribute("class");
       option3.setAttribute("class", "box");
-    } else if (sum >= 16 && 20 >= sum) {
+    } else if (sum >= 15 && 20 >= sum) {
       option4.setAttribute("class", "hidden");
       option4.removeAttribute("class");
       option4.setAttribute("class", "box");
-    } else if (sum >= 21 && 25 >= sum && 25 === sum) {
+    } else if (sum >= 20 || sum === 25) {
       option5.setAttribute("class", "hidden");
       option5.removeAttribute("class");
       option5.setAttribute("class", "box");
-    }
+    } else if (sum >= 25) {
+      alert("Try again");
+    } 
   }
+
 }

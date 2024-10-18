@@ -122,4 +122,6 @@ button:hover {
   max-height: 100%;
   border: solid black 3px;
   width: 100%;
+  background-color: lightblue;
 }
+
